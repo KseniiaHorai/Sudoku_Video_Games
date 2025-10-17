@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sudoku</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="container">
+               <ul class="menu">
+                  <li class="menu_item_difficulty">Difficulty:</li>
+                  <li class="menu_item"><a href="#" class="menu_link">Easy</a></li>
+                  <li class="menu_item"><a href="#" class="menu_link">Medium</a></li>
+                  <li class="menu_item"><a href="#" class="menu_link">Hard</a></li>
+                  <li class="menu_item"><a href="#" class="menu_link">Expert</a></li>
+                  <li class="menu_item"><a href="#" class="menu_link">Evil</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="subheader">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 offset-md-1">
+                     <a href="#" class="subheader_link">
+                     <img src="img/logo.png" alt="logo" class="subheader_logo">
+                     </a>
+                  </div>
+                  <div class="col-md-2 offset-md-2">
+                     <button class="subheader_btn">
+                        <div data-modal class="subheader_rules">Rules</div>
+                     </button>
+                  </div>
+                  <div class="col-md-2">
+                     <button class="subheader_btn">
+                        <div data-email class="subheader_email">Send Email</div>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="board">
+      <div class="lives">
+         <img src="img/heart.png" alt="Heart" class="heart">
+         <img src="img/heart.png" alt="Heart" class="heart">
+         <img src="img/heart.png" alt="Heart" class="heart">
+      </div>
+      <div class="board_structure">
+         <div class="board_blocks">
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+         </div>
+         <div class="board_blocks">
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+         </div>
+         <div class="board_blocks">
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+            <div class="board_rows">
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+               <div class="board_rows_tiles">
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+                  <div class="board_tiles"></div>
+               </div>
+            </div>
+         </div>
+         <div class="sudoku_timer">
+            <div class="timer">
+               <div class="timer__block">
+                  <span id="minutes">00</span>
+                  minutes
+               </div>
+               <div class="timer__block">
+                  <span id="seconds">00</span>
+                  seconds
+               </div>
+            </div>
+         </div>
+         <div class="input_numbers">
+            <div class="input_digit">1</div>
+            <div class="input_digit">2</div>
+            <div class="input_digit">3</div>
+            <div class="input_digit">4</div>
+            <div class="input_digit">5</div>
+            <div class="input_digit">6</div>
+            <div class="input_digit">7</div>
+            <div class="input_digit">8</div>
+            <div class="input_digit">9</div>
+         </div>
+      </div>
+      <div data-modal class="modal">
+         <div class="modal__dialog">
+            <div class="modal__content">
+               <div data-close class="modal__close">&times;</div>
+               <div class="modal__title">What are the 3 rules of Sudoku?</div>
+               <ol type="1" class="modal_rules">
+                  <li class="rule">Each row should have numbers 1-9, no repeats</li>
+                  <li class="rule">Each column should have numbers 1-9, no repeats</li>
+                  <li class="rule">Each 3x3 quadrant should have numbers 1-9, no repeats</li>
+               </ol>
+               <div class="bonus_rule">Bonus rule: Mathematically this means the sum of each of these categories should be 45</div>
+            </div>
+         </div>
+      </div>
+      <script src = "../js/script.js" type="module"></script>
+   </body>
+</html>
