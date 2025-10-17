@@ -23,6 +23,6 @@
 •	Relaxing music  
 •	The "Show Solution" button  
 
-<img width="1894" height="830" alt="image" src="https://github.com/user-attachments/assets/83e4cc83-14a7-4429-abd1-8d45c7554053" />
-<img width="1919" height="749" alt="image" src="https://github.com/user-attachments/assets/ee6c8fa8-e38d-4659-9cf1-ee1f8875ddc8" />
-<img width="1919" height="751" alt="image" src="https://github.com/user-attachments/assets/44c988c7-2ca7-412e-8f7d-1cd815b41ab0" />
+![Main Board Image](images/1.png)
+![Game Over Image](images/2.png)
+![Rules Image](images/3.png)
